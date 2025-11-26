@@ -57,8 +57,9 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -66,10 +67,17 @@ body {
     color: var(--text-color);
     font-weight: 500;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 .nav-link:hover {
     color: var(--primary-color);
+}
+
+.nav-link i {
+    font-size: 1rem;
 }
 
 .btn-cv {
