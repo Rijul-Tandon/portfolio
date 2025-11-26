@@ -1,0 +1,121 @@
+# DEPLOYMENT CHECKLIST FOR rijultandon.engineer
+
+## Pre-Deployment ✓
+- [x] index.html - Main website file
+- [x] styles.css - All styling
+- [x] script.js - Interactive features
+- [x] RIJUL_CV.pdf - Your CV (place in website folder)
+- [x] .htaccess - Performance & redirects
+- [x] robots.txt - SEO optimization
+- [x] sitemap.xml - SEO optimization
+- [x] README.md - Documentation
+
+## Deployment Steps
+
+### Step 1: Choose Your Hosting Provider
+**Options (cheapest first):**
+- Netlify (FREE - recommended for static sites)
+- Namecheap Shared Hosting ($2.88/mo)
+- Hostinger ($1.99/mo)
+- Bluehost ($2.95/mo)
+
+### Step 2: Connect Your Domain
+Tell me:
+1. Where you registered rijultandon.engineer (Namecheap? GoDaddy?)
+2. Which hosting provider you chose
+3. Your FTP/hosting credentials
+
+### Step 3: Upload Files
+I'll provide exact instructions based on your choice above.
+
+---
+
+## QUICK START - If Using Namecheap Hosting
+
+### Via cPanel (easiest):
+1. Log in to cPanel at: `rijultandon.engineer:2083`
+2. Go to "File Manager" 
+3. Open `public_html` folder
+4. Upload all files:
+   - index.html
+   - styles.css  
+   - script.js
+   - RIJUL_CV.pdf
+   - .htaccess
+   - robots.txt
+   - sitemap.xml
+5. Go to SSL/TLS, enable HTTPS
+6. Wait 10 minutes
+7. Visit: https://rijultandon.engineer ✓
+
+---
+
+## Files to Upload
+```
+website/
+├── index.html              ← MAIN FILE
+├── styles.css              ← Design
+├── script.js               ← Features
+├── RIJUL_CV.pdf            ← Your CV
+├── .htaccess               ← Server config
+├── robots.txt              ← SEO
+└── sitemap.xml             ← SEO sitemap
+```
+
+## Domain Pointing (if needed)
+
+### Method 1: Update Nameservers (recommended)
+1. Go to Namecheap DNS settings
+2. Update to your hosting provider's nameservers:
+   - Namecheap Hosting: ns1.namecheap.com, ns2.namecheap.com
+   - Hostinger: Check your panel for their NS
+   - Bluehost: Check your panel for their NS
+3. Wait 24-48 hours for DNS propagation
+
+### Method 2: A Records (faster)
+1. Go to Namecheap DNS settings
+2. Update A record to your hosting IP
+3. Ask your host for the IP address
+4. Wait 2-6 hours
+
+---
+
+## After Upload
+
+### Verify Everything Works:
+- [ ] Visit https://rijultandon.engineer (check HTTPS works)
+- [ ] Click "Resume" button (CV downloads)
+- [ ] Click on sections (smooth scroll works)
+- [ ] Check mobile view (responsive design)
+- [ ] Click contact links (email opens)
+
+### SEO Setup (optional):
+- [ ] Add to Google Search Console
+- [ ] Add to Bing Webmaster Tools
+- [ ] Monitor in Google Analytics
+
+---
+
+## Support Resources
+
+- **FTP Help**: FileZilla Documentation
+- **cPanel Help**: cPanel Knowledge Base
+- **DNS Help**: Your registrar's support
+- **SSL Help**: Let's Encrypt Documentation
+
+---
+
+## NEXT STEPS
+
+**Tell me:**
+1. ✉️ Which hosting provider did you register rijultandon.engineer with?
+2. 🌐 Do you already have hosting, or need one?
+3. 🔑 Do you have FTP/cPanel access credentials?
+
+I'll give you exact step-by-step deployment instructions!
+
+---
+
+## One-Liner Summary
+
+**Your website is ready.** Just upload the files from this folder to your hosting's `public_html/` folder, point your domain, enable HTTPS, and visit rijultandon.engineer. Done! 🚀

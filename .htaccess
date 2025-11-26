@@ -1,0 +1,22 @@
+# Enable GZIP compression
+<ifModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</ifModule>
+
+# Cache control
+<filesmatch "\.(jpg|jpeg|png|gif|js|css|swf)$">
+  Header set Cache-Control "max-age=604800, public"
+</filesmatch>
+
+# Redirect to HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
+
+# Prevent directory listing
+Options -Indexes
