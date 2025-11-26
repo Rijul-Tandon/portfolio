@@ -1,0 +1,158 @@
+# YOUR DEPLOYMENT STEPS - RIJULTANDON.ENGINEER
+
+## ✅ WHAT'S DONE:
+- [x] Portfolio website built
+- [x] All files ready
+- [x] Git repository initialized
+- [x] Git configured with your email
+
+## ⏭️ NEXT STEPS (15 minutes):
+
+### STEP 1: Create GitHub Account
+1. Go to: https://github.com/signup
+2. Email: `letscomerijul@gmail.com`
+3. Password: (create one)
+4. Username: (your choice, e.g., rijultandon, rijul2024, etc.)
+5. Verify email
+6. **Save your username and password somewhere safe**
+
+### STEP 2: Create GitHub Repository
+1. Log in to https://github.com
+2. Click "+" → "New repository"
+3. Name: `portfolio`
+4. Description: `Professional Portfolio`
+5. Select: **Public**
+6. **DO NOT** check "Initialize this repository"
+7. Click "Create repository"
+8. **Copy the URL** shown (looks like: `https://github.com/YOUR_USERNAME/portfolio.git`)
+
+### STEP 3: Push Your Code to GitHub
+Open PowerShell and run these commands (paste the URL from Step 2):
+
+```powershell
+cd c:\Users\letsc\Desktop\Details\website
+
+git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
+
+git branch -M main
+
+git push -u origin main
+```
+
+**Replace YOUR_USERNAME with your actual GitHub username**
+
+When it asks for credentials, enter:
+- Username: Your GitHub username
+- Password: Your GitHub password (or personal access token)
+
+### STEP 4: Deploy to Netlify
+1. Go to: https://netlify.com/signup
+2. Click "Sign up with GitHub"
+3. Click "Authorize netlify" (connects to your GitHub)
+4. After login, click "Add new site" → "Import an existing project"
+5. Select your GitHub account
+6. Find and select `portfolio` repository
+7. Click "Deploy site"
+8. **Wait 2-5 minutes** - your site will build and deploy automatically! 🚀
+
+### STEP 5: Connect Your Custom Domain
+1. In Netlify dashboard, go to "Site settings"
+2. Click "Domain management"
+3. Click "Add custom domain"
+4. Enter: `rijultandon.engineer`
+5. Netlify shows you 4 nameservers (they look like: dns1.p01.nsone.net, etc.)
+6. **Copy all 4 nameservers**
+
+### STEP 6: Update Name.com DNS Settings
+1. Go to: https://www.name.com
+2. Log in with your Name.com credentials
+3. Find `rijultandon.engineer` domain
+4. Click on it
+5. Go to "DNS" or "Nameservers" section
+6. Replace the current nameservers with Netlify's 4 nameservers you copied
+7. Save/Update
+8. **Wait 24-48 hours** for DNS to propagate
+
+### STEP 7: Verify Your Site
+After DNS updates:
+1. Visit: https://rijultandon.engineer
+2. You should see your portfolio! ✨
+3. Check:
+   - ✅ Looks good?
+   - ✅ Can download CV?
+   - ✅ Smooth scrolling works?
+   - ✅ Mobile looks good?
+   - ✅ HTTPS secure lock shows?
+
+---
+
+## 📝 WHAT TO HAVE READY:
+
+- GitHub username (create in Step 1)
+- GitHub password (create in Step 1)
+- Name.com login credentials (you already have)
+- This guide bookmarked
+
+---
+
+## ⏱️ TIMELINE:
+
+- **Step 1-2:** 5 minutes (GitHub signup + repo creation)
+- **Step 3:** 2 minutes (Push code)
+- **Step 4:** 5 minutes + 2-5 min wait (Netlify deploy)
+- **Step 5-6:** 3 minutes (Domain setup)
+- **Waiting:** 24-48 hours (DNS propagation)
+- **Total:** ~20 minutes setup + 1-2 days wait
+
+---
+
+## 💡 TIPS:
+
+- Save your GitHub credentials in a password manager
+- Bookmark https://netlify.com and https://github.com for future edits
+- Check Name.com DNS status: https://mxtoolbox.com/nslookup.aspx
+- DNS checker: https://www.whatsmydns.net/
+
+---
+
+## 🔧 FUTURE UPDATES:
+
+Want to update your portfolio later? Super easy:
+
+```powershell
+cd c:\Users\letsc\Desktop\Details\website
+
+# Edit any files (index.html, styles.css, etc.)
+# Then run:
+
+git add .
+git commit -m "Update: Added new project"
+git push
+
+# Netlify automatically redeploys in 30 seconds!
+```
+
+---
+
+## ❓ STUCK?
+
+If you get stuck on any step, screenshot the error and ask me. I'm here to help! 
+
+Most common issues:
+- Git not found → Restart PowerShell/computer
+- GitHub credentials rejected → Copy-paste password carefully
+- DNS not updating → Takes up to 48 hours, check later
+
+---
+
+## 🎉 FINAL SUMMARY:
+
+Your site is ready. You're just:
+1. Creating GitHub account (free)
+2. Pushing your code to GitHub (1 command)
+3. Connecting to Netlify (3 clicks)
+4. Updating DNS on Name.com (copy-paste 4 nameservers)
+5. Waiting for DNS to propagate
+6. Done! 🚀
+
+Questions? Ask me anytime!
