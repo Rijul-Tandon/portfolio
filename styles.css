@@ -186,10 +186,7 @@ body {
     background-color: var(--light-bg);
 }
 
-.about h2,
-.skills h2,
-.projects h2,
-.contact h2 {
+.about h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -197,8 +194,12 @@ body {
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+.about-text {
+    margin-bottom: 3rem;
 }
 
 .about-text p {
@@ -207,45 +208,165 @@ body {
     line-height: 1.8;
 }
 
-/* Skills Section */
-.skills {
-    padding: 4rem 0;
+.work-projects h3 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem;
+    color: var(--primary-color);
 }
 
-.skills-grid {
+.work-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
-.skill-card {
-    background-color: var(--light-bg);
-    padding: 2rem;
+.work-item {
+    background-color: white;
+    padding: 1.5rem;
     border-radius: 8px;
     border-left: 4px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
 }
 
-.skill-card:hover {
+.work-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.work-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.work-item p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.tech-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: #eff6ff;
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Experience Section */
+.experience-section {
+    margin-top: 3rem;
+}
+
+.experience-section h3 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem;
+    color: var(--primary-color);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.experience-item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+    transition: var(--transition);
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.exp-header {
+    margin-bottom: 1rem;
+}
+
+.exp-header h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.exp-company {
+    font-size: 0.95rem;
+    opacity: 0.95;
+    margin: 0;
+}
+
+.exp-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Skills Section (now Projects) */
+.projects {
+    padding: 4rem 0;
+    background-color: var(--light-bg);
+}
+
+.projects h2,
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.skills-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.skill-category:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.skill-card h3 {
+.skill-category h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
-.skill-card ul {
+.skill-list {
     list-style: none;
 }
 
-.skill-card li {
+.skill-list li {
     padding: 0.5rem 0;
     color: var(--text-color);
 }
 
-.skill-card li:before {
+.skill-list li:before {
     content: "✓ ";
     color: var(--success-color);
     font-weight: bold;
@@ -310,6 +431,13 @@ body {
 .contact {
     padding: 4rem 0;
     text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-color);
 }
 
 .contact-subtitle {
